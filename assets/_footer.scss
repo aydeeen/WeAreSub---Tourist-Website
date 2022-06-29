@@ -1,0 +1,52 @@
+.footer {
+   @include section;
+
+   background-color: $body;
+
+   &__logo {
+      height: 33px;
+   }
+
+   .menu-item {
+      a {
+         &[aria-current="page"] {
+            color: $link-hover-color;
+         }
+      }
+   }
+
+   &__description {
+      font-weight: 300;
+      color: $white;
+      margin-top: 30px;
+   }
+
+   &__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #afe1fb;
+      margin-bottom: 30px;
+      margin-right: calc(226px - 70px);
+   }
+
+   &__list {
+      padding-left: 0;
+      list-style-type: none;
+      margin-bottom: 0;
+
+      li:not(:last-child) {
+         margin-bottom: 15px;
+      }
+
+      a {
+         color: $white;
+         display: inline-flex;
+         align-items: center;
+         justify-content: flex-start;
+
+         img {
+            margin-right: 20px;
+         }
+      }
+   }
+}
